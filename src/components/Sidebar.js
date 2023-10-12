@@ -32,8 +32,8 @@ const Sidebar = () => {
         <span role="img" aria-label="Home Icon">
           🏠
           {expanded && <span className="icon-name">Home</span>}
-          {expanded && isHomeClicked && (
-            <div className="dropdown-options">
+          {expanded && (
+            <div className={`dropdown-options ${isHomeClicked ? 'big':''}`}>
               <li className="nav-item">
                 <Link to="/">Home</Link>
               </li>
@@ -42,6 +42,7 @@ const Sidebar = () => {
               </li>
             </div>
           )}
+          
         </span>
 
       </div>
@@ -49,8 +50,8 @@ const Sidebar = () => {
         <span role="img" aria-label="About Icon">
           ℹ️
           {expanded && <span className="icon-name">  About</span>}
-          {expanded && isAboutClicked && (
-            <div className="dropdown-options">
+          {expanded && (
+            <div className={`dropdown-options ${isAboutClicked ? 'big':''}`}>
               <div >Option A</div>
               <div >Option B</div>
               <div >Option C</div>
