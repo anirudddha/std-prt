@@ -14,16 +14,17 @@
 }
 
 .sidebar-icon {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  size: 40px;
 }
 
 .icon-name {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .expand-button {
